@@ -7,10 +7,10 @@ void quickSort(int *input,int len)
     for(int i =0; i < len; i++){
         for(int j = i+1; j < len; j++){
             if(input[i] > input[j]){
-	        tmp = input[i];
-		input[i] = input[j];
-		input[j] = tmp; 
-	    }
+				tmp = input[i];
+				input[i] = input[j];
+				input[j] = tmp; 
+			}
         }
     }
     return;
