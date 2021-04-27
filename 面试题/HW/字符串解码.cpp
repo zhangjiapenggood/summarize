@@ -2,16 +2,39 @@
 #include<string>
 #include <vector>
 using namespace std;
-/*输入
 
-a11b2bac3bad3abcd2
+/*
+@华为面试题目：字符串解码，C++解法
+题目描述
+将一段压缩后的字符串解压缩，并且排序输出。
 
-b2abcd2bac3bad3a11
-abcd2b2bac3bad3a11
+解压规则：
+每个字符串后面跟着一个数字，表示这个字符串的重复次数。例如，”a5”解压后的结果为”aaaaa”；’abc3’解压后的结果为”abcabcabc”。
 
+排序规则：
+1、根据每个字符串的重复次数升序排序，然后输出结果。例如，”a3b2”，输出的结果为”bbaaa”。
+2、如果字符重复次数一样，则根据ASCII编码顺序做升序排序，然后输出结果。例如，”b2a2”，输出的结果为”aabb”。
+
+输入描述：
+	输入的原始字符串仅包含字母与数字
+
+输出描述：
+	输出的结果字符串仅包含字母
+
+示例1
+输入
+	a11b2bac3bad3abcd2
 输出
+	abcdabcdbbbacbacbacbadbadbadaaaaaaaaaaa
+*/
 
-abcdabcdbbbacbacbacbadbadbadaaaaaaaaaaa
+/*解题思路
+	1.将a11b2bac3bad3abcd2字符串中的字符和数字分别存储
+		vector<string> tmpstr -> tmpstr[0] = "a"  tmpstr[1] = b ...
+		vector<int> tmpInt ->    tmpInt[0] = 11   tmpInt[1] = 2 ....
+	2.对tmpInt中的数据进行排序，数值大的更换位置，并且更换tmpstr的位置
+	   程序结束后字符串变为abcd2b2bac3bad3a11
+	3.对字符串进行展开返回结果
 */
 
 
