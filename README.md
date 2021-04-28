@@ -1,3 +1,19 @@
-# summarize
-This is a summary of my learning process. The languages used are C/C++, which are continuously updated.
-将会对一个相同的问题分别使用C、C++进行编写
+# 总结
+### 目录介绍
+
+* **algorithm**
+
+  主要存放数据结构与算法的相关源代码
+
+* **leetcode**
+
+  主要存放在leetcode网站中进行作业的相关源代码
+
+* **面试题**
+
+  主要存放可能从不同的网站上看到的各种题型，对此类题型感兴趣，进行了代码编写
+
+* ......
+
+
+
